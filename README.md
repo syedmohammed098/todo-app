@@ -8,10 +8,11 @@ Features:
 - Task counter updates automatically  
 
 ## 🚀 Live Demo
-[Click here to try the app](https://yourusername.github.io/todo-app/)
+[Click here to try the app](https://syedmohammed098.github.io/todo-app/)
 
 ---
 
-👨‍💻 Built by [Your Name]
+👨‍💻 Built by [S.MD.Waseem]
+
 
 

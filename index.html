@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do App — Syed Mohammed Waseem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container">
+      <h1>My To-Do List</h1>
+      <p class="subtitle">Simple, fast, and persistent — build good habits.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="todo-app" aria-labelledby="todo-heading">
+      <h2 id="todo-heading" class="visually-hidden">To Do App</h2>
+
+      <form id="taskForm" class="task-form" aria-label="Add new task">
+        <label for="taskInput" class="visually-hidden">Task</label>
+        <input id="taskInput" placeholder="Add a new task and press Enter" autocomplete="off">
+        <button type="submit" class="btn primary">Add</button>
+      </form>
+
+      <div class="controls">
+        <div class="filters" role="tablist" aria-label="Filter tasks">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="actions">
+          <input id="search" placeholder="Search tasks..." aria-label="Search tasks">
+          <button id="clearCompleted" class="btn">Clear completed</button>
+        </div>
+      </div>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+
+      <div class="footer-row">
+        <div id="taskCount" class="task-count">0 tasks</div>
+        <div class="note">Tip: click a task to toggle complete — double-click to edit.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Syed Mohammed Waseem • Built with HTML, CSS & JS</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
